@@ -14,17 +14,17 @@ import java.util.HashMap;
 import java.util.Map;
 import org.springframework.stereotype.Component;
 
-@Component
-public class MessageService {
-    public static final String AWS_ACCESS_KEY_ID = "aws.accessKeyId";
-    public static final String AWS_SECRET_KEY = "aws.secretKey";
-
-    static {
-        System.setProperty(AWS_ACCESS_KEY_ID, "AKIA2HTW6RQU6RZE3BWG");
-        System.setProperty(AWS_SECRET_KEY, "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");
-
-    }
-    
+// @Component
+//public class MessageService {
+//    public static final String AWS_ACCESS_KEY_ID = "aws.accessKeyId";
+//    public static final String AWS_SECRET_KEY = "aws.secretKey";
+//
+//    static {
+//       System.setProperty(AWS_ACCESS_KEY_ID, "AKIA2HTW6RQU6RZE3BWG");
+//        System.setProperty(AWS_SECRET_KEY, "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");
+//
+//   }
+//   
     
     public String sendMessage(Customer user){
         MessageService myClient =new MessageService();
